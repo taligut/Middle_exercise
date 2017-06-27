@@ -3,3 +3,21 @@ body {
     text-align: right;
     align-content: center
 }
+
+nav ul {
+    width: 800px;
+    margin: auto;
+}
+
+#topsection {
+    align-content: center;
+    background: red;
+    width: 1000px;
+    position: relative;
+    padding: 0px;
+    margin: auto;
+}
+
+#topsection div {
+    display: inline-block;
+}
