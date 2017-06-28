@@ -7,11 +7,10 @@ body {
 }
 
 nav ul {
-    width: 800px;
-    margin: auto;
-    display: lock;
-    background-color: gray;
+    display: block;
     width: 100%;
+    margin: auto;
+    background-color: gray;
     height: 106px;
     color: white;
 }
@@ -22,6 +21,7 @@ nav ul li {
     list-style-type: none;
     text-decoration: none;
     display: inline;
+    width: 910px;
 }
 
 nav ul li a {
@@ -30,21 +30,82 @@ nav ul li a {
     margin: 10px;
     padding: 0px;
     display:inline-block;
-    line-height: 100px;
+    line-height: 140px;
+    font-weight: bold;
 }
 
-#topsection {
-    /*align-content: center;*/
-    background: red;
-    width: 890px;
-    position: relative;
-    padding: 0px;
+#main {
+    width: 910px;
     margin: auto;
 }
 
-#topsection div {
-    display: inline-block;
-    align-content: center;
-    padding-top: 31px;
-    padding-bottom: 19px;
+#topsection {
+    padding: 0px;
+    position: relative;
+}
+
+.article1 {
+    width: 200px;
+    height: 110px;
+    position: absolute;
+    right: 5px;
+    bottom: 15px;
+    background-color: gray;
+    margin: 5px;
+    opacity: 0.85;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-align: right;
+    padding: 5px;
+}
+
+#bottomsection div {
+    padding: 0px;
+    position: relative;
+}
+
+#topsection:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#top, #bottom {
+    float: right;
+    padding: 6px;
+    position: relative;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul {
+    display: block;
+    margin: auto;
+    background-color: gray;
+    height: 30px;
+    color: white;
+
+}
+
+footer ul li {
+    padding: 0;
+    margin: 0px;
+    list-style-type: none;
+    text-decoration: none;
+    display: inline;
+    width: 910px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    padding: 0px;
+    display:inline-block;
+    line-height: 5px;
 }
